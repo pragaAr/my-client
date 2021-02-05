@@ -1,0 +1,105 @@
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand {
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.tombol {
+	font-weight: 550;
+	border-radius: 40px;
+}
+
+.jumbotron {
+	background-image: url(../greenmoney.jpg);
+	background-size: cover;
+	height: 550px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 40%;
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4 {
+	color: white;
+	font-weight: bold;
+	font-size: 31px;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+	margin-top: 150px;
+	letter-spacing: 2px;
+}
+
+.jumbotron .lead {
+	color: white;
+	font-weight: 450;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead span {
+	font-weight: 650;
+	text-transform: uppercase;
+}
+
+/* only desktop ver */
+@media (min-width: 992px) {
+	.nav-link {
+		font-weight: 550;
+		margin-right: 30px;
+		letter-spacing: 2px;
+	}
+
+	.navbar-brand {
+		font-family: 'Lobster', cursive;
+	}
+
+	.navbar-brand,
+	.nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #28a745;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.active {
+		color: #28a745 !important;
+		font-weight: bolder;
+	}
+
+	.jumbotron {
+		margin-top: -65px;
+		height: 660px;
+	}
+
+	.jumbotron .display-4 {
+		font-size: 62px;
+		letter-spacing: 2px;
+	}
+}
