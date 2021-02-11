@@ -33,7 +33,7 @@
                   <td> <?= $da['nama']; ?></td>
                   <td>Rp. <?= number_format($da['jml_pinjam'], 0, ',', '.'); ?></td>
                   <td>Rp. <?= number_format($da['angsur_bln'], 0, ',', '.'); ?></td>
-                  <td><?= date('d-m-Y, H:i:s', strtotime($da['tgl_pinjam'])); ?></td>
+                  <td><?= date('d / M / Y, H:i:s', strtotime($da['tgl_pinjam'])); ?></td>
                   <td>
                     <div class="btn-group" role="group">
                       <a href="<?= base_url('data_pinjaman/detail/') . $da['id_pinjam']; ?>" class="btn btn-info btn-sm mr-2" data-toggle="tooltip" title="Detail"><i class="fas fa-info-circle"></i></a>

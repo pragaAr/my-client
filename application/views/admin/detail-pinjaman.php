@@ -48,7 +48,7 @@
               <tr>
                 <td class="font-weight-bold text-danger">Tanggal Pinjam</td>
                 <td>:</td>
-                <td class="font-weight-bold"><?= date('d m Y H:i:s', strtotime($pinjaman['tgl_pinjam'])) ?></td>
+                <td class="font-weight-bold"><?= date('d / M / Y, H:i:s', strtotime($pinjaman['tgl_pinjam'])) ?></td>
               </tr>
               <tr>
                 <td class="font-weight-bold text-danger">Tanggal Bayar</td>

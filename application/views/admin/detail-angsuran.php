@@ -47,7 +47,7 @@
                 </tr>
                 <tr>
                   <td class="font-weight-bold text-danger">Tanggal Pinjam</td>
-                  <td class="font-weight-bold"><?= date('d  F  Y H:i:s', strtotime($summaryAngsuran['tgl_pinjam'])) ?></td>
+                  <td class="font-weight-bold"><?= date('d / M / Y, H:i:s', strtotime($summaryAngsuran['tgl_pinjam'])) ?></td>
                 </tr>
                 <tr>
                   <td class="font-weight-bold text-danger">Tanggal Bayar</td>
@@ -89,7 +89,7 @@
                   foreach ($angsurans as $angsuran) {
                   ?>
                     <tr>
-                      <td><?= date('d  F  Y H:i:s', strtotime($angsuran['tgl_bayar'])) ?></td>
+                      <td><?= date('d / M / Y, H:i:s', strtotime($angsuran['tgl_bayar'])) ?></td>
                       <td>Rp. <?= number_format($angsuran['nom_angsur']) ?></td>
                       <td><?= $angsuran['ket_otomatis'] ?></td>
                     </tr>

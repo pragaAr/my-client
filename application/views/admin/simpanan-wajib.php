@@ -31,7 +31,7 @@
                   <th scope="row"><?= $i; ?></th>
                   <td> <?= $si['nama']; ?></td>
                   <td>Rp. <?= number_format($si['nominal_wajib'], 0, ',', '.') ?></td>
-                  <td> <?= date('d  F  Y', strtotime($si['tgl_simpan'])) ?></td>
+                  <td> <?= date('d / M / Y', strtotime($si['tgl_simpan'])) ?></td>
                   <td>
                     <div class="btn-group" role="group">
                       <a href="<?= base_url('simpanan_wajib/update/') . $si['id_sim_wajib']; ?>" class="btn btn-success btn-sm mr-2" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></a>
