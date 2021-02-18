@@ -1,6 +1,4 @@
-<?php
-
-defined('BASEPATH') or exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
 class Data_anggota extends CI_Controller
 {
@@ -79,14 +77,6 @@ class Data_anggota extends CI_Controller
     $data['nama']    = $this->session->userdata('nama');
     $data['anggota'] = $this->Anggota_model->getId($id);
     $data['detil']   = $this->DetailByIdAnggota_model->getData($id);
-
-    // if (empty($data['detil'])) {
-    //   echo "kosong";
-    // } else {
-    //   echo "ada";
-    // }
-    var_dump($data['detil']);
-    die;
 
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar');

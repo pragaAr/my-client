@@ -8,7 +8,7 @@ class Simpanan_wajib_model extends CI_Model
   public function __construct()
   {
     $this->_client = new Client([
-      'base_uri' => 'http://localhost:8080/my-server/api/'
+      'base_uri' => 'http://kspserver.xyz//api/'
     ]);
   }
 

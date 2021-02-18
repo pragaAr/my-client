@@ -8,7 +8,7 @@ class Auth_model extends CI_Model
   public function __construct()
   {
     $this->_client = new Client([
-      'base_uri' => 'http://localhost:8080/my-server/api/Anggota_user/'
+      'base_uri' => 'http://kspserver.xyz/api/Anggota_user/'
     ]);
   }
 
