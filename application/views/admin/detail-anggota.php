@@ -77,19 +77,24 @@
         </div>
       </div>
     </div>
+    <?php
+
+    function showNominal($detil, $field_name)
+    {
+      $nominal = $detil ? $detil[$field_name] : '0';
+      if ($nominal > 0) {
+        $nominal =  number_format($nominal);
+      }
+      return "Rp. " . $nominal;
+    }
+
+    ?>
     <div class="row">
       <div class="col-md-3">
         <div class="card card-danger">
           <div class="card-body">
             <h5 class="card-title">Pinjaman</h5>
-            <?php
-            $jml = number_format($detil['total_bayar']);
-            if (empty($jml)) {
-              echo "<h6 class='font-weight-bold'>Rp. 0</h6>";
-            } else {
-              echo "<h6 class='font-weight-bold'>Rp. $jml </h6>";
-            }
-            ?>
+            <h6 class='font-weight-bold'><?= showNominal($detil, 'total_bayar') ?></h6>
           </div>
         </div>
       </div>
@@ -97,14 +102,7 @@
         <div class="card card-danger">
           <div class="card-body">
             <h5 class="card-title">Simpanan Wajib</h5>
-            <?php
-            $wajib = number_format($detil['nominal_wajib']);
-            if (empty($wajib)) {
-              echo "<h6 class='font-weight-bold'>Rp. 0</h6>";
-            } else {
-              echo "<h6 class='font-weight-bold'>Rp. $wajib </h6>";
-            }
-            ?>
+            <h6 class='font-weight-bold'><?= showNominal($detil, 'nominal_pokok') ?></h6>
           </div>
         </div>
       </div>
@@ -112,14 +110,7 @@
         <div class="card card-danger">
           <div class="card-body">
             <h5 class="card-title">Simpanan Pokok</h5>
-            <?php
-            $pokok = number_format($detil['nominal_pokok']);
-            if (empty($pokok)) {
-              echo "<h6 class='font-weight-bold'>Rp. 0</h6>";
-            } else {
-              echo "<h6 class='font-weight-bold'>Rp. $pokok </h6>";
-            }
-            ?>
+            <h6 class='font-weight-bold'><?= showNominal($detil, 'total_bayar') ?></h6>
           </div>
         </div>
       </div>
@@ -127,14 +118,7 @@
         <div class="card card-danger">
           <div class="card-body">
             <h5 class="card-title">Simpanan Sukarela</h5>
-            <?php
-            $sukarela = number_format($detil['nominal_sukarela']);
-            if (empty($sukarela)) {
-              echo "<h6 class='font-weight-bold'>Rp. 0</h6>";
-            } else {
-              echo "<h6 class='font-weight-bold'>Rp. $sukarela </h6>";
-            }
-            ?>
+            <h6 class='font-weight-bold'><?= showNominal($detil, 'nominal_sukarela') ?></h6>
           </div>
         </div>
       </div>
