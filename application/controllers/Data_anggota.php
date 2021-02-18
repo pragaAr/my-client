@@ -85,8 +85,8 @@ class Data_anggota extends CI_Controller
     // } else {
     //   echo "ada";
     // }
-    // var_dump($data['detil']);
-    // die;
+    var_dump($data['detil']);
+    die;
 
     $this->load->view('templates/header');
     $this->load->view('templates/sidebar');

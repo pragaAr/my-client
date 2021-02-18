@@ -44,9 +44,11 @@ class Simpanan_sukarela extends CI_Controller
   {
     $data['title']  = 'Ubah Data Simpanan Sukarela';
     $data['nama']   = $this->session->userdata('nama');
-    $data['data']   = $this->Simpanan_sukarela_model->getId($id);
+    $data['simpan'] = $this->Simpanan_sukarela_model->getId($id);
+    // var_dump($data['simpan']);
+    // die;
 
-    $this->form_validation->set_rules('nominal_sukarela', 'Nominal', 'trim|required');
+    $this->form_validation->set_rules('nominal_sukarela', 'Nominal', 'required');
 
     if ($this->form_validation->run() == false) {
       $this->load->view('templates/header');

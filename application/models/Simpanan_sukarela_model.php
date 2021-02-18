@@ -86,6 +86,7 @@ class Simpanan_sukarela_model extends CI_Model
     $result = json_decode($response->getBody()->getContents(), true);
     return $result;
   }
+
   public function deleteData($id)
   {
     $token = $this->session->userdata('token');
