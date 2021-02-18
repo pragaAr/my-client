@@ -26,6 +26,6 @@ class DetailByIdAnggota_model extends CI_Model
       ]
     ]);
     $result = json_decode($response->getBody()->getContents(), true);
-    return isset($result['data'][0])  ? $result['data'][0] : null;
+    return isset($result['data'])  ? $result['data'] : null;
   }
 }
