@@ -60,7 +60,7 @@ class Data_pinjaman extends CI_Controller
       $this->load->view('templates/footer');
     } else {
       $this->Pinjaman_model->updateData();
-      $this->session->set_flashdata('flash', 'Berhasil Mengubah Data');
+      $this->session->set_flashdata('flashEdit', 'Berhasil Mengubah Data');
       redirect('data_pinjaman');
     }
   }

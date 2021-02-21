@@ -9,6 +9,17 @@ if (flashData) {
 	});
 }
 
+const flashEdit = $('.flashEdit').data('flashdata');
+
+if (flashData) {
+	Swal.fire({
+		icon: 'success',
+		title: 'Yey...,',
+		text: flashEdit,
+		type: 'success'
+	});
+}
+
 // tombol-hapus
 $('.tombol-hapus').on('click', function (e) {
 
