@@ -11,7 +11,7 @@ if (flashData) {
 
 const flashEdit = $('.flashEdit').data('flashdata');
 
-if (flashData) {
+if (flashEdit) {
 	Swal.fire({
 		icon: 'success',
 		title: 'Yey...,',
