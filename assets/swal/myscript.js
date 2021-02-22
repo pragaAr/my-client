@@ -5,7 +5,6 @@ if (flashData) {
 		icon: 'success',
 		title: 'Selamat Datang,',
 		text: flashData,
-		type: 'success'
 	});
 }
 
@@ -16,7 +15,6 @@ if (flashEdit) {
 		icon: 'success',
 		title: 'Yey...,',
 		text: flashEdit,
-		type: 'success'
 	});
 }
 
@@ -30,7 +28,6 @@ $('.tombol-hapus').on('click', function (e) {
 		icon: 'warning',
 		title: 'Apakah anda yakin ?',
 		text: "Data akan di hapus",
-		type: 'warning',
 		showCancelButton: true,
 		confirmButtonColor: '#3085d6',
 		cancelButtonColor: '#d33',

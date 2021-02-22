@@ -14,6 +14,7 @@
               </div>
             <?php endif; ?>
             <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
+            <div class="flashEdit" data-flashdata="<?= $this->session->flashdata('flashEdit'); ?>"></div>
 
             <thead align="center">
               <tr>

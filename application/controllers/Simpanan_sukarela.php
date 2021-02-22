@@ -56,7 +56,7 @@ class Simpanan_sukarela extends CI_Controller
       $this->load->view('templates/footer');
     } else {
       $this->Simpanan_sukarela_model->updateData();
-      $this->session->set_flashdata('flash', 'Berhasil Mengubah Data');
+      $this->session->set_flashdata('flashEdit', 'Berhasil Mengubah Data');
       redirect('simpanan_sukarela');
     }
   }
