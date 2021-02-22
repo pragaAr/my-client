@@ -100,7 +100,7 @@ class Pinjaman_model extends CI_Model
     ];
 
     $post_data    = $this->input->post();
-    $tempo        = $post_data['angsuran'];
+    $tempo        = $post_data['tempo'];
     $bungabln     = $post_data['jml_pinjam'] * ($post_data['bunga'] / 100);
     $pokok        = $post_data['jml_pinjam'] / $tempo;
     $cicilan      = $bungabln + $pokok;
