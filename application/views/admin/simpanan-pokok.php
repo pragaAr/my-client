@@ -71,7 +71,7 @@
             </select>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" id="formatRupiah" min="100000" name="nominal_pokok" placeholder="Nominal Minimum Rp. 100.000" required="" oninvalid="this.setCustomValidity('Nominal Minimum Rp. 100.000')" oninput="setCustomValidity('')">
+            <input type="number" class="form-control" id="nominal_pokok" min="100000" name="nominal_pokok" placeholder="Nominal Minimum Rp. 100.000" required="" oninvalid="this.setCustomValidity('Nominal Minimum Rp. 100.000')" oninput="setCustomValidity('')">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

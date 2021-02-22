@@ -70,7 +70,7 @@
             </select>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" id="formatRupiah" name="nominal_sukarela" placeholder="Nominal berapapun boleh" required="" oninvalid="this.setCustomValidity('Nominal simpanan nya berapa ?')" oninput="setCustomValidity('')">
+            <input type="number" class="form-control" id="nominal_sukarela" name="nominal_sukarela" placeholder="Nominal berapapun boleh" required="" oninvalid="this.setCustomValidity('Nominal simpanan nya berapa ?')" oninput="setCustomValidity('')">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
