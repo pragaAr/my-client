@@ -52,12 +52,9 @@ class Simpanan_sukarela_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
-    $post_data   = $this->input->post();
-    $sukarela    = preg_replace("/[^0-9]/", "", $post_data['nominal_sukarela']);
-
     $data = [
       "anggota_id"        => $this->input->post('anggota_id', true),
-      "nominal_sukarela"  => $sukarela,
+      "nominal_sukarela"  => $this->input->post('nominal_sukarela', true),
       'MyKey'             => 'kspkey'
     ];
     $response = $this->_client->request('POST', 'Simpanan_sukarela', [
@@ -75,12 +72,9 @@ class Simpanan_sukarela_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
-    $post_data   = $this->input->post();
-    $sukarela    = preg_replace("/[^0-9]/", "", $post_data['nominal_sukarela']);
-
     $data = [
       "anggota_id"        => $this->input->post('anggota_id', true),
-      "nominal_sukarela"  => $sukarela,
+      "nominal_sukarela"  => $this->input->post('nominal_sukarela', true),
       "id_sukarela"       => $this->input->post('id_sukarela', true),
       'MyKey'             => 'kspkey'
     ];

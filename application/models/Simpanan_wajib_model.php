@@ -52,12 +52,9 @@ class Simpanan_wajib_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
-    $post_data   = $this->input->post();
-    $wajib       = preg_replace("/[^0-9]/", "", $post_data['nominal_wajib']);
-
     $data = [
       "anggota_id"    => $this->input->post('anggota_id', true),
-      "nominal_wajib" => $wajib,
+      "nominal_wajib"   => $this->input->post('nominal_wajib', true),
       'MyKey'         => 'kspkey'
     ];
     $response = $this->_client->request('POST', 'Simpanan_wajib', [
@@ -75,12 +72,9 @@ class Simpanan_wajib_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
-    $post_data   = $this->input->post();
-    $wajib       = preg_replace("/[^0-9]/", "", $post_data['nominal_wajib']);
-
     $data = [
       "anggota_id"      => $this->input->post('anggota_id', true),
-      "nominal_wajib"   => $wajib,
+      "nominal_wajib"   => $this->input->post('nominal_wajib', true),
       "id_sim_wajib"    => $this->input->post('id_sim_wajib', true),
       'MyKey'           => 'kspkey'
     ];
