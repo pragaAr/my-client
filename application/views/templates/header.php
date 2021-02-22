@@ -14,6 +14,6 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href=" https://ajm-client.herokuapp.com/assets/assets/css/style.css">
-  <link rel="stylesheet" href=" https://ajm-client.herokuapp.com/assets/assets/css/components.css">
+  <link rel="stylesheet" href="<?= base_url('assets/assets/css/style.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/assets/css/components.css') ?>">
 </head>
