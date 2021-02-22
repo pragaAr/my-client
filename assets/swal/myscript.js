@@ -3,7 +3,7 @@ const flashData = $('.flash-data').data('flashdata');
 if (flashData) {
 	Swal.fire({
 		icon: 'success',
-		title: 'Selamat Datang,',
+		title: 'Selamat Datang',
 		text: flashData,
 	});
 }
@@ -13,7 +13,7 @@ const flashEdit = $('.flashEdit').data('flashdata');
 if (flashEdit) {
 	Swal.fire({
 		icon: 'success',
-		title: 'Yey...,',
+		title: 'Yey...',
 		text: flashEdit,
 	});
 }
