@@ -74,7 +74,7 @@
             </select>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="jml_pinjam" name="jml_pinjam" placeholder="Jumlah Pinjam" required="" oninvalid="this.setCustomValidity('Mau pinjam berapa ?')" oninput="setCustomValidity('')">
+            <input type="text" class="form-control" id="formatRupiah" name="jml_pinjam" placeholder="Jumlah Pinjam" required="" oninvalid="this.setCustomValidity('Mau pinjam berapa ?')" oninput="setCustomValidity('')">
           </div>
           <div class="form-group">
             <select name="bunga" id="bunga" class="form-control" required="" oninvalid="this.setCustomValidity('Mau bunga berapa ?')" oninput="setCustomValidity('')">

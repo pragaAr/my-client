@@ -16,7 +16,7 @@
               </div>
               <div class="form-group">
                 <label for="nominal_wajib">Nominal Minimum Rp. 75.000</label>
-                <input type="text" name="nominal_wajib" class="form-control" id="nominal_wajib" value="<?= $data['nominal_wajib']; ?>">
+                <input type="text" name="nominal_wajib" class="form-control" id="formatRupiah" value="<?= $data['nominal_wajib']; ?>">
                 <?= form_error('nominal', '<small class="text-danger pl-3">', '</small>'); ?>
               </div>
               <div class="form-group">

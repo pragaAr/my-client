@@ -15,7 +15,7 @@
               </div>
               <div class="form-group">
                 <label for="jml_pinjam">Jumlah Pinjam</label>
-                <input type="text" name="jml_pinjam" class="form-control" id="jml_pinjam" value="<?= $pinjaman['jml_pinjam']; ?>" required="" oninvalid="this.setCustomValidity('Mau pinjam berapa ?')" oninput="setCustomValidity('')">
+                <input type="text" name="jml_pinjam" class="form-control" id="formatRupiah" value="<?= $pinjaman['jml_pinjam']; ?>" required="" oninvalid="this.setCustomValidity('Mau pinjam berapa ?')" oninput="setCustomValidity('')">
               </div>
               <div class="form-group">
                 <label for="bunga">Suku Bunga</label>

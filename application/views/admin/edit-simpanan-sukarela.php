@@ -16,7 +16,7 @@
               </div>
               <div class="form-group">
                 <label for="nominal_sukarela">Nominal Minimum Rp. 100.000</label>
-                <input type="text" name="nominal_sukarela" class="form-control" id="nominal_sukarela" value="<?= $simpan['nominal_sukarela']; ?>">
+                <input type="text" name="nominal_sukarela" class="form-control" id="formatRupiah" value="<?= $simpan['nominal_sukarela']; ?>">
                 <?= form_error('nominal', '<small class="text-danger pl-3">', '</small>'); ?>
               </div>
               <div class="form-group">

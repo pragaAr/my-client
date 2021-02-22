@@ -64,6 +64,8 @@ class Pinjaman_model extends CI_Model
     $ribuan = substr($cicil, -3);
     $akhir  = $cicil + (1000 - $ribuan);
 
+    $pinjam = preg_replace("/[^0-9]/", "", $post_data['jml_pinjam']);
+
     $total_bayar  = $akhir * $tempo;
     $total = $total_bayar;
     $nilaitotal = substr($total, -3);
@@ -72,7 +74,7 @@ class Pinjaman_model extends CI_Model
 
     $data = [
       'anggota_id'  => $this->input->post('anggota_id'),
-      'jml_pinjam'  => $this->input->post('jml_pinjam'),
+      'jml_pinjam'  => $pinjam,
       'bunga'       => $this->input->post('bunga'),
       'tempo'       => $tempo,
       'angsur_bln'  => $akhir,
@@ -107,6 +109,8 @@ class Pinjaman_model extends CI_Model
     $ribuan = substr($cicil, -3);
     $akhir  = $cicil + (1000 - $ribuan);
 
+    $pinjam = preg_replace("/[^0-9]/", "", $post_data['jml_pinjam']);
+
     $total_bayar  = $akhir * $tempo;
     $total = $total_bayar;
     $nilaitotal = substr($total, -3);
@@ -114,7 +118,7 @@ class Pinjaman_model extends CI_Model
 
     $data = [
       'anggota_id'  => $this->input->post('anggota_id'),
-      'jml_pinjam'  => $this->input->post('jml_pinjam'),
+      'jml_pinjam'  => $pinjam,
       'bunga'       => $this->input->post('bunga'),
       'tempo'       => $this->input->post('tempo'),
       'angsur_bln'  => $akhir,

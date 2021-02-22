@@ -52,9 +52,12 @@ class Simpanan_pokok_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
+    $post_data    = $this->input->post();
+    $pokok = preg_replace("/[^0-9]/", "", $post_data['nominal_pokok']);
+
     $data = [
       "anggota_id"    => $this->input->post('anggota_id', true),
-      "nominal_pokok" => $this->input->post('nominal_pokok', true),
+      "nominal_pokok" => $pokok,
       'MyKey'         => 'kspkey'
     ];
     $response = $this->_client->request('POST', 'Simpanan_pokok', [
@@ -72,9 +75,12 @@ class Simpanan_pokok_model extends CI_Model
       'Authorization' => 'Bearer ' . $token
     ];
 
+    $post_data    = $this->input->post();
+    $pokok = preg_replace("/[^0-9]/", "", $post_data['nominal_pokok']);
+
     $data = [
       "anggota_id"    => $this->input->post('anggota_id', true),
-      "nominal_pokok" => $this->input->post('nominal_pokok', true),
+      "nominal_pokok" => $pokok,
       "id_sim_pokok"  => $this->input->post('id_sim_pokok', true),
       'MyKey'         => 'kspkey'
     ];
