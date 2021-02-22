@@ -12,11 +12,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="<?= base_url('assets/') ?>assets/js/stisla.js"></script>
+<script src="<?= base_url('assets/assets/js/stisla.js') ?>"></script>
 <script src="<?= base_url('assets/swal/sweetalert2.all.min.js') ?>"></script>
 
-<script src="<?= base_url('assets/') ?>assets/js/scripts.js"></script>
-<script src="<?= base_url('assets/') ?>assets/js/custom.js"></script>
+<script src="<?= base_url('assets/assets/js/scripts.js') ?>"></script>
+<script src="<?= base_url('assets/assets/js/custom.js') ?>"></script>
 
 <script>
   const flashAuth = $('.flash-data').data('flashdata');
@@ -26,7 +26,6 @@
       icon: 'warning',
       title: 'Anda belum Login !',
       text: flashAuth,
-      type: 'warning'
     });
   }
 
@@ -37,7 +36,6 @@
       icon: 'success',
       title: 'Anda telah keluar :)',
       text: flashLogout,
-      type: 'success'
     });
   }
 
@@ -48,7 +46,6 @@
       icon: 'success',
       title: 'Akun anda berhasil dibuat',
       text: flashLogin,
-      type: 'success'
     });
   }
 
@@ -59,7 +56,6 @@
       icon: 'warning',
       title: 'Login gagal!',
       text: flashcek,
-      type: 'warning'
     });
   }
 
@@ -70,7 +66,6 @@
       icon: 'warning',
       title: 'Jangan Nakal !',
       text: flashceklogin,
-      type: 'warning'
     });
   }
 </script>
